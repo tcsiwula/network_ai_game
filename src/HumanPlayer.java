@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class HumanPlayer extends Player
 {
 
-    Network humanPlayersBoard;
+    Driver humanPlayersBoard;
 
     SingletonScanner scanner;
     private static Scanner s = null;
@@ -11,7 +11,7 @@ public class HumanPlayer extends Player
     public HumanPlayer(int playerNum)
     {
         super(playerNum);
-        humanPlayersBoard = new Network();
+        humanPlayersBoard = new Driver();
         if (playerNum == 1)
         {
             humanPlayersBoard.isPlayers1Board = true;

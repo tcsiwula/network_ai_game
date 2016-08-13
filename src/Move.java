@@ -1,5 +1,5 @@
 /**
- * Representation of a Move in Network.  Each move is either a PLACE_PIECE move or a
+ * Representation of a Move in Driver.  Each move is either a PLACE_PIECE move or a
  * MOVE_PIECE move.  If it is a PLACE_PIECE move, then the toRow and toCol fields are the
  * row and column to place the piece, and the fromRow and fromCol fields are ignored.
  * If this is a MOVE_PIECE move, then fromRow and fromCol are the row and column to

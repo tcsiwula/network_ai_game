@@ -1,11 +1,11 @@
 
 public class ComputerPlayer extends Player
 {
-    Network computerPlayersBoard;
+    Driver computerPlayersBoard;
     public ComputerPlayer(int playerNum)
     {
         super(playerNum);
-        computerPlayersBoard = new Network();
+        computerPlayersBoard = new Driver();
         if (playerNum == 1)
         {
             computerPlayersBoard.isPlayers1Board = true;

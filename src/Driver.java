@@ -2,10 +2,10 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Network
+public class Driver
 {
 
-  public Network()
+  public Driver()
   {
 
   }
@@ -65,7 +65,7 @@ public class Network
 
     public static void main(String[] args)
     {
-        Network SidSacksonsGameCalledNetwork = new Network();
+        Driver SidSacksonsGameCalledNetwork = new Driver();
         SidSacksonsGameCalledNetwork.loadPlayers();
         SidSacksonsGameCalledNetwork.initializeBoard();
         SidSacksonsGameCalledNetwork.startGame();
@@ -83,7 +83,7 @@ public class Network
     public void loadPlayers()
     {
        Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome to the game called Network by Sid Sacksons!");
+        System.out.println("Welcome to the game called Driver by Sid Sacksons!");
 
         System.out.println("Enter the number of human players (0, 1 or 2): __");
         numberOfHumanPlayers = scanner.nextInt();
@@ -897,12 +897,12 @@ public class Network
         {
             if ( isPlayers1Move )
             {
-                System.out.println("Player1 - Network size checks.");
+                System.out.println("Player1 - Driver size checks.");
                 checkGoal();
             }
             else
             {
-                System.out.println("Player2 - Network size checks.");
+                System.out.println("Player2 - Driver size checks.");
                 checkGoal();
             }
         }
@@ -933,13 +933,13 @@ public class Network
             }
             if (startGoal && endGoal && middleGoal)
             {
-                System.out.println("Player1 - Network goals checks.");
+                System.out.println("Player1 - Driver goals checks.");
                 checkGoal = true;
                 checkDirection();
             }
             else
             {
-                System.out.println("Player1 - Network goals fails.");
+                System.out.println("Player1 - Driver goals fails.");
 
             }
         }
@@ -966,13 +966,13 @@ public class Network
             }
             if (startGoal && endGoal && middleGoal)
             {
-                System.out.println("Player2 - Network goals checks.");
+                System.out.println("Player2 - Driver goals checks.");
                 checkGoal = true;
                 checkDirection();
             }
             else
             {
-                System.out.println("Player2 - Network goals fails.");
+                System.out.println("Player2 - Driver goals fails.");
 
             }
         }
